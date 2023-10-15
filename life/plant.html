@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
+    <title>农作</title>
+    <link rel="stylesheet" href="/css/iframe.css">
+    <style>
+        @media only screen and (max-width: 800px) {
+        th,td {
+            font-size: 0.9em;
+            padding: 5px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <h1>农作</h1>
+    <h2>作物</h2>
+    <p>一格种子对应一格土地，每块田地有54格土地。<br>
+        不要在农作物上奔跑、跳跃，会降低作物的品质。<br>
+        使用镰刀可以把作物砍掉。</p>
+    <h3>浇水</h3>
+    <p>需要每天浇水，如果不浇水，作物会变成灰色。<br>
+        如果持续不浇水，作物会枯萎。<br>
+        浇水10小时后，可以再次浇水。<br>
+        每天浇水2次,可以使作物以最少天数成长。<br>
+        洒水壶升级后，跳起来洒水的范围更广，但是有可能会踩到作物。
+    </p>
+    <h3>肥料</h3>
+    <p>每天可以使用肥料一次，肥料可以提升作物品质。<br>
+        连作的作物，在收获1次后，即使施肥也不会发生变化。<br>
+        SHOP穆乔卖的肥料是★0.5。<br>
+        使用「发酵风车」可以得到更高品质的肥料。<br>
+        品质越高的作物，出售的价格越高。<br>
+    </p>
+    <p class="note">
+        快速培育高品质的作物方法是，种植作物并每天施肥。<br>
+        一天只浇一次水，可以延长作物的生长时间。<br>
+        收获后拿到「粉碎风车」制作成种子，并不断重复这个过程，直到获得★5的作物。
+    </p>
+    <h3>地下室</h3>
+    <p>地下室不可以使用肥料。<br>
+        地下室可根据放置的季节太阳，来控制季节。<br>
+        地下室一直是晴天。<br>
+    </p>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2" style="width: 2em;">季节</th>
+                <th rowspan="2">作物</th>
+                <th colspan="2">价格</th>
+                <th rowspan="2">生长周期(天)</th>
+                <th rowspan="2">贩售</th>
+            </tr>
+            <tr>
+                <th>种子(G)</th>
+                <th>作物(5★)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="6">春</td>
+                <td>芜菁</td>
+                <td>120</td>
+                <td>350</td>
+                <td>4~5</td>
+                <td>穆乔(镇)</td>
+            </tr>
+            <tr>
+                <td>土豆</td>
+                <td>170</td>
+                <td>530</td>
+                <td>6~8</td>
+                <td rowspan="3">穆乔(集)</td>
+            </tr>
+            <tr>
+                <td>卷心菜</td>
+                <td>350</td>
+                <td>1050</td>
+                <td>11~15</td>
+            </tr>
+            <tr>
+                <td>黄瓜</td>
+                <td>180</td>
+                <td>165</td>
+                <td>7~9(6)</td>
+            </tr>
+            <tr>
+                <td>芦笋</td>
+                <td>240</td>
+                <td>810</td>
+                <td>8~11</td>
+                <td rowspan="2">陈(集)</td>
+            </tr>
+            <tr>
+                <td>草莓</td>
+                <td>200</td>
+                <td>220</td>
+                <td>6~8(4)</td>
+            </tr>
+            <tr>
+                <td rowspan="6">夏</td>
+                <td>水萝卜</td>
+                <td>200</td>
+                <td>600</td>
+                <td>4~5</td>
+                <td>穆乔(镇)</td>
+            </tr>
+            <tr>
+                <td>洋葱</td>
+                <td>140</td>
+                <td>490</td>
+                <td>5~7</td>
+                <td rowspan="3">穆乔(集)</td>
+            </tr>
+            <tr>
+                <td>番茄</td>
+                <td>150</td>
+                <td>220</td>
+                <td>8~10(4)</td>
+            </tr>
+            <tr>
+                <td>菠萝</td>
+                <td>1400</td>
+                <td>4200</td>
+                <td>15~21(6)</td>
+            </tr>
+            <tr>
+                <td>玉米</td>
+                <td>450</td>
+                <td>500</td>
+                <td>11~15(4)</td>
+                <td rowspan="2">陈(集)</td>
+            </tr>
+            <tr>
+                <td>南瓜</td>
+                <td>250</td>
+                <td>980</td>
+                <td>11~15</td>
+            </tr>
+            <tr>
+                <td rowspan="7">秋</td>
+                <td>茄子</td>
+                <td>200</td>
+                <td>250</td>
+                <td>8~10</td>
+                <td>穆乔(镇)</td>
+            </tr>
+            <tr>
+                <td>地瓜</td>
+                <td>300</td>
+                <td>220</td>
+                <td>4~6(4)</td>
+                <td rowspan="3">穆乔(集)</td>
+            </tr>
+            <tr>
+                <td>青椒</td>
+                <td>180</td>
+                <td>165</td>
+                <td>6~8(3)</td>
+            </tr>
+            <tr>
+                <td>菠菜</td>
+                <td>200</td>
+                <td>630</td>
+                <td>5~6</td>
+            </tr>
+            <tr>
+                <td>胡萝卜</td>
+                <td>140</td>
+                <td>530</td>
+                <td>6~8</td>
+                <td rowspan="3">陈(集)</td>
+            </tr>
+            <tr>
+                <td>甜椒</td>
+                <td>300</td>
+                <td>420</td>
+                <td>8~11(3)</td>
+            </tr>
+            <tr>
+                <td>菜花</td>
+                <td>250</td>
+                <td>1120</td>
+                <td>11~15</td>
+            </tr>
+            <tr>
+                <td rowspan="2">冬以外</td>
+                <td>小麦</td>
+                <td>60</td>
+                <td>165</td>
+                <td>50(±3)</td>
+                <td rowspan="2">菲尼克斯(集)</td>
+            </tr>
+            <tr>
+                <td>牧草</td>
+                <td>500</td>
+                <td>80</td>
+                <td>12(8)</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>※ 使用「粉碎风车」制作高品质的小麦种子，需要很长时间（1个96h！）<br>
+        所以，如果需要很多高品质的小麦，还是踏实地撒肥料比较轻松。<br>
+        使用★0.5的肥料的话，大约35～40天可以获得★5的作物。<br>
+        <s>肥料价格超过作物售价的低效作物</s></p>
+    <h2>果树</h2>
+    <p>每棵果树需要 9 个 3x3 的方格。<br>
+        <b>果树不需要浇水。</b><br>
+        使用肥料对果树有效。<br>
+        不需要果树的时候，可以用斧头砍倒。（种子阶段使用锄头）<br>
+        首次收获一般是3个，之后根据种类的不同大约是1~2个。<br>
+    </p>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2" style="width: 2em;">收获<br>季节</th>
+                <th rowspan="2">作物</th>
+                <th colspan="2">价格</th>
+                <th rowspan="2">生长周期(天)</th>
+                <th rowspan="2">贩售</th>
+            </tr>
+            <tr>
+                <th>种子(G)</th>
+                <th>作物(5★)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">春</td>
+                <td>橄榄</td>
+                <td>300</td>
+                <td>450</td>
+                <td>2月(3日)</td>
+                <td>谢璐芙（秋）</td>
+            </tr>
+            <tr>
+                <td>咖啡</td>
+                <td>200</td>
+                <td>560</td>
+                <td>2月(2日)</td>
+                <td>谢璐芙（秋，3年后）</td>
+            </tr>
+            <tr>
+                <td rowspan="4">夏</td>
+                <td>桃子</td>
+                <td>300</td>
+                <td>700</td>
+                <td>2月(2日)</td>
+                <td>谢璐芙（夏）</td>
+            </tr>
+            <tr>
+                <td>香蕉</td>
+                <td>300</td>
+                <td>840</td>
+                <td>1月(3日)</td>
+                <td>谢璐芙（夏，2年后）</td>
+            </tr>
+            <tr>
+                <td>橘子</td>
+                <td>200</td>
+                <td>560</td>
+                <td>1月半(3日)</td>
+                <td>谢璐芙（夏，3年后）</td>
+            </tr>
+            <tr>
+                <td>樱桃</td>
+                <td>160</td>
+                <td>220</td>
+                <td>2月(2日)</td>
+                <td>弗乔（夏）</td>
+            </tr>
+            <tr>
+                <td rowspan="4">秋</td>
+                <td>紫葡萄</td>
+                <td>720</td>
+                <td>560</td>
+                <td>2月(3日)</td>
+                <td>谢璐芙（春）</td>
+            </tr>
+            <tr>
+                <td>白葡萄</td>
+                <td>220</td>
+                <td>615</td>
+                <td>2月(3日)</td>
+                <td>谢璐芙（春）</td>
+            </tr>
+            <tr>
+                <td>苹果</td>
+                <td>220</td>
+                <td>615</td>
+                <td>2月(2日)</td>
+                <td>谢璐芙（春，2年后）</td>
+            </tr>
+            <tr>
+                <td>蓝莓</td>
+                <td>300</td>
+                <td>840</td>
+                <td>2月(2日)</td>
+                <td>弗乔（秋）</td>
+            </tr>
+            <tr>
+                <td>冬以外</td>
+                <td>茶树</td>
+                <td>120</td>
+                <td>(春)700<br>(夏)840<br>(秋)700</td>
+                <td>1月(4日)</td>
+                <td>谢璐芙（秋）</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
