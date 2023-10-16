@@ -185,6 +185,14 @@
                     width: 24px;
                 }
             }
+            @keyframes rotate360 {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
             @media only screen and (min-width: 801px) {
                 .windmill {
                     width: 600px;
@@ -193,14 +201,6 @@
                     overflow: hidden;
                     bottom: 0px;
                     right: 0px;
-                }
-                @keyframes rotate360 {
-                    0% {
-                        transform: rotate(0deg);
-                    }
-                    100% {
-                        transform: rotate(360deg);
-                    }
                 }
                 .wind {
                     position: absolute;
@@ -226,14 +226,6 @@
                     width: 360px;
                     height: 360px;
                     overflow: hidden;
-                }
-                @keyframes rotate360 {
-                    0% {
-                        transform: rotate(0deg);
-                    }
-                    100% {
-                        transform: rotate(360deg);
-                    }
                 }
                 .wind {
                     position: absolute;
@@ -305,8 +297,8 @@
             <img src="/images/qrcode_for_weixin.jpg" class="qrcode"/>
         </div>
         <div class="windmill">
-            <img src="./1x/1.png" class="wind" />
-            <img src="./1x/2.png" class="mill" />
+            <img src="./1x/1.svg" class="wind" />
+            <img src="./1x/2.svg" class="mill" />
         </div>
     </body>
 </html>
