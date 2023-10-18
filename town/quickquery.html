@@ -7,6 +7,32 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
     <title>居民喜好速查</title>
     <link rel="stylesheet" href="/css/iframe.css">
+    <style>
+        .flex_resident {
+            display: flex;
+            display: -webkit-flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        .flex_resident div {
+            margin: 0 20px 0 20px;
+        }
+        .flex_resident img {
+            width: 18px;
+        }
+        @media only screen and (max-width: 800px) {
+
+            .flex_resident img {
+                width: 13px;
+            }
+
+            .flex_resident th,
+            td {
+                padding: 8px;
+            }
+        }
+    </style>
 </head>
 <body>
     <h1>居民喜好速查</h1>

@@ -111,3 +111,28 @@
 .other { color: brown; }
 .drug { color: violet; }
 .purple { color:#8A2BE2 }
+
+.flex_resident {
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.flex_resident div {
+    margin: 0 20px 0 20px;
+}
+.flex_resident img {
+    width: 18px;
+}
+@media only screen and (max-width: 800px) {
+
+    .flex_resident img {
+        width: 13px;
+    }
+
+    .flex_resident th,
+    td {
+        padding: 8px;
+    }
+}
