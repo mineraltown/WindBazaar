@@ -7,8 +7,155 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
     <title>居民喜好速查</title>
     <link rel="stylesheet" href="/css/iframe.css">
+    <style>
+        td {
+            text-align: left;
+            font-size: 0.9em;
+        }
+        @media only screen and (max-width: 800px) {
+            tbody th {
+                min-width: 4em;
+            }
+            th,
+            td {
+                font-size: 0.8em;
+                padding: 2px;
+            }
+        }
+    </style>
 </head>
 <body>
     <h1>居民喜好速查</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>生日</th>
+                <th>喜好</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th class="Red">华月</th>
+                <td>春5日</td>
+                <td><b>豆奶布丁</b>、花、香草类</td>
+            </tr>
+            <tr>
+                <th class="Red">谢露芙</th>
+                <td>春16日</td>
+                <td><b>香草沙拉</b>、月泪草、面包、沙拉类、豆腐、茶类、蝴蝶类</td>
+            </tr>
+            <tr>
+                <th class="Red">秋牡丹</th>
+                <td>春27日</td>
+                <td><b>草莓派</b>、果汁类、蝴蝶类、萤火虫类、胸针、花、巧克力</td>
+            </tr>
+            <tr>
+                <th class="Red">芙蕾娅</th>
+                <td>秋25日</td>
+                <td><b>柑橘香水</b>、芝士类料理、非甜酒类、蝴蝶类、巧克力、红色奇幻朱草、牛奶、牛奶咖喱</td>
+            </tr>
+            <tr>
+                <th class="Red">安琪</th>
+                <td>冬12日</td>
+                <td><b>樱桃茶</b>、蛙类、饰品类、巧克力、蓝色奇幻朱草、汤、冰淇淋</td>
+            </tr>
+            <tr>
+                <th class="Blue">迪鲁卡</th>
+                <td>夏12日</td>
+                <td><b>奶油可乐饼</b>、红色奇幻朱草、咖喱类、每个季节的茶叶、铜硬币、独角仙类、锹形虫类、银硬币、金硬币</td>
+            </tr>
+            <tr>
+                <th class="Blue">劳埃德</th>
+                <td>秋3日</td>
+                <td><b>西班牙海鲜饭</b>、蓝色奇幻朱草、全部昆虫</td>
+            </tr>
+            <tr>
+                <th class="Blue">尤里斯</th>
+                <td>秋20日</td>
+                <td><b>香草香水</b>、月泪草、三色花、蓝色奇幻朱草、粉色猫薄荷、薄荷、洋甘菊、薰衣草、三明治、芜菁、烤饭团、什锦沙拉、面包、吐司</td>
+            </tr>
+            <tr>
+                <th class="Blue">施密特</th>
+                <td>冬26日</td>
+                <td><b>炖菜</b>、月泪草、牛奶、巧克力、米粥、锹形虫类、米饭</td>
+            </tr>
+            <tr>
+                <th class="Blue">阿吉</th>
+                <td>冬28日</td>
+                <td><b>蛋包饭</b>、巧克力、鸡蛋、核桃、月泪草</td>
+            </tr>
+            <tr>
+                <th>梅里尼</th>
+                <td>春18日</td>
+                <td><b>水果三明治</b>、月泪草、三色花、粉色猫薄荷、巧克力、鸡蛋、油</td>
+            </tr>
+            <tr>
+                <th>埃利希</th>
+                <td>春20日</td>
+                <td><b>春色混合茶</b>、蓝色奇幻朱草、红茶、沙拉类、吐司、香草沙拉</td>
+            </tr>
+            <tr>
+                <th>莎妮亚</th>
+                <td>春25日</td>
+                <td><b>汤圆水果捞</b>、蓝色奇幻朱草、三色花、粉色猫薄荷、薄荷茶、草莓、三角蟋蟀</td>
+            </tr>
+            <tr>
+                <th>菲尼克斯</th>
+                <td>夏1日</td>
+                <td><b>辣咖喱</b>、咖喱饭、玉蕈饭、葡萄酒、红色奇幻朱草、独角仙类（不含甲虫类）、芝士、洋葱汤</td>
+            </tr>
+            <tr>
+                <th>威尔伯</th>
+                <td>夏3日</td>
+                <td><b>锡纸蘑菇蒸</b>、木材、石材、鱼、咖喱饭、葡萄酒、烤蘑菇</td>
+            </tr>
+            <tr>
+                <th>穆乔</th>
+                <td>夏21日</td>
+                <td><b>可乐饼</b>、红色奇幻朱草、硬币、萤火虫类</td>
+            </tr>
+            <tr>
+                <th>凯文</th>
+                <td>夏25日</td>
+                <td><b>大锹形虫</b>、全部虫、石头、空罐、长靴、鱼骨、杂草</td>
+            </tr>
+            <tr>
+                <th>奈莉奈</th>
+                <td>夏30日</td>
+                <td><b>奇迹牛奶</b>、洋甘菊、薄荷、月泪草、布丁、巧克力、鸡蛋、鱼、萤火虫类、油</td>
+            </tr>
+            <tr>
+                <th>埃萨克</th>
+                <td>秋6日</td>
+                <td><b>果酱面包</b>、石材、鱼、吐司</td>
+            </tr>
+            <tr>
+                <th>斯图尔特</th>
+                <td>秋11日</td>
+                <td><b>栗子蛋糕</b>、月泪草、薄荷茶、巧克力、蝗虫类</td>
+            </tr>
+            <tr>
+                <th>诗琼</th>
+                <td>秋18日</td>
+                <td><b>甜甜圈</b>、粉色猫薄荷、红色奇幻朱草、鸡蛋、硬币、鱼、巧克力</td>
+            </tr>
+            <tr>
+                <th>拉拉米</th>
+                <td>秋19日</td>
+                <td><b>甜蜜烤番薯</b>、巧克力、蓝色奇幻朱草、红色奇幻朱草、牛奶、萤火虫类、香草类</td>
+            </tr>
+            <tr>
+                <th>克莱尔</th>
+                <td>秋29日</td>
+                <td><b>腌橄榄</b>、蓝色奇幻朱草、洋甘菊、薄荷、玉米浓汤、香草沙拉、橄榄、腌菜类、鱼、烤番薯、巧克力、鸡蛋、油</td>
+            </tr>
+            <tr>
+                <th>米娜</th>
+                <td>冬4日</td>
+                <td><b>香草意面</b>、香草类（如薰衣草）、三色花、月泪草、粉色猫薄荷、巧克力、蓝色奇幻朱草、面包</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>

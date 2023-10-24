@@ -219,6 +219,7 @@
         align-items: center;
     }
     .pose {
+        position: relative;
         width: 100%;
         background-color: #ddd;
     }
@@ -229,7 +230,7 @@
     }
     .pose img {
         position: absolute;
-        top: 100px;
+        top: -150px;
         right: 50px;
         z-index: 999;
         height: 500px;
