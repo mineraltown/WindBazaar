@@ -97,20 +97,48 @@
     vertical-align: bottom;
 }
 
-.blue { color: #1b75bc; }
-.red { color: #f04e4d; }
-.green { color: #198d44; }
-.orange { color: orange; }
-.silvery { color: silver; }
-.gold { color: gold; }
-.flower { color: #FA8072; }
-.mineral { color: tan; }
-.insect { color: #9ACD32; }
-.fish { color:#4169E1 }
-.cheese { color:#ff7300; }
-.other { color: brown; }
-.drug { color: violet; }
-.purple { color:#8A2BE2 }
+.blue {
+    color: #1b75bc;
+}
+.red {
+    color: #f04e4d;
+}
+.green {
+    color: #198d44;
+}
+.orange {
+    color: orange;
+}
+.silvery {
+    color: silver;
+}
+.gold {
+    color: gold;
+}
+.flower {
+    color: #fa8072;
+}
+.mineral {
+    color: tan;
+}
+.insect {
+    color: #9acd32;
+}
+.fish {
+    color: #4169e1;
+}
+.cheese {
+    color: #ff7300;
+}
+.other {
+    color: brown;
+}
+.drug {
+    color: violet;
+}
+.purple {
+    color: #8a2be2;
+}
 
 .flex_resident {
     display: flex;
@@ -126,7 +154,6 @@
     width: 18px;
 }
 @media only screen and (max-width: 800px) {
-
     .flex_resident img {
         width: 13px;
     }
@@ -135,4 +162,102 @@
     td {
         padding: 8px;
     }
+}
+
+.cv {
+    border-left: 10px solid #198d44;
+    padding-left: 0.5em;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.cv_t {
+    font-size: 0.7em;
+}
+
+@media only screen and (max-width: 800px) {
+    .top {
+        display: flex;
+        display: -webkit-flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .pose {
+        z-index: 999;
+        background-color: #ddd;
+        margin-top: 4em;
+        width: 100%;
+        display: flex;
+        display: -webkit-flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+    .pose img {
+        margin-top: -6em;
+        width: 50%;
+        max-width: 300px;
+    }
+    .pose p {
+        margin-left: 1em;
+        padding: 0;
+        flex-grow: 1;
+        font-size: 0.9em;
+    }
+    .tips {
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (min-width: 801px) {
+    .top {
+        display: flex;
+        display: -webkit-flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .pose {
+        width: 100%;
+        background-color: #ddd;
+    }
+    .pose p {
+        margin-left: 1em;
+        padding: 1em;
+        flex-grow: 1;
+    }
+    .pose img {
+        position: absolute;
+        top: 100px;
+        right: 50px;
+        z-index: 999;
+        height: 500px;
+    }
+    .tips {
+        margin-left: 4em
+    }
+}
+.birth {
+    font-size: 0.9em;
+    font-style: italic;
+}
+.day {
+    margin-left: 0.5em;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+ul {
+    max-width: 500px;
+}
+
+rt {
+    color: gray;
+}
+
+.love_up {
+    margin-left: 1em;
+    font-size: 0.8em;
+    color: gray;
 }
